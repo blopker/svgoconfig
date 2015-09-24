@@ -1,0 +1,57 @@
+# replace default config
+
+multipass: true
+full: true # Disregard all defaults
+
+plugins:
+
+  # - name
+  #
+  # or:
+  # - name: false
+  # - name: true
+  #
+  # or:
+  # - name:
+  #     param1: 1
+  #     param2: 2
+
+  # - addClassesToSVGElement
+  - cleanupAttrs
+  - cleanupEnableBackground
+  - cleanupIDs:
+       prefix: 'ttam-'
+  - cleanupListOfValues
+  - cleanupNumericValues
+  - collapseGroups
+  - convertColors
+  - convertPathData
+  - convertShapeToPath
+  - convertStyleToAttrs
+  - convertTransform
+  - mergePaths
+  - moveElemsAttrsToGroup
+  - moveGroupAttrsToElems
+  # - removeAttrs
+  - removeComments
+  - removeDesc
+  - removeDimensions
+  - removeDoctype
+  - removeEditorsNSData
+  - removeEmptyAttrs
+  - removeEmptyContainers
+  - removeEmptyText
+  - removeHiddenElems
+  - removeMetadata
+  - removeNonInheritableGroupAttrs
+  - removeRasterImages
+  # - removeStyleElement
+  - removeTitle
+  - removeUnknownsAndDefaults
+  - removeUnusedNS
+  - removeUselessDefs
+  - removeUselessStrokeAndFill
+  # - removeViewBox
+  - removeXMLProcInst
+  - sortAttrs
+  - transformsWithOnePath

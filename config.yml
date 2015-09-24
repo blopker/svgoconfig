@@ -31,7 +31,7 @@ plugins:
   - convertTransform
   - mergePaths
   - moveElemsAttrsToGroup
-  - moveGroupAttrsToElems
+  # - moveGroupAttrsToElems
   # - removeAttrs
   - removeComments
   - removeDesc

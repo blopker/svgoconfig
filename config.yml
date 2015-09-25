@@ -5,53 +5,54 @@ full: true # Disregard all defaults
 
 plugins:
 
-  # - name
-  #
-  # or:
-  # - name: false
-  # - name: true
-  #
-  # or:
-  # - name:
-  #     param1: 1
-  #     param2: 2
+    # - name
+    #
+    # or:
+    # - name: false
+    # - name: true
+    #
+    # or:
+    # - name:
+    #     param1: 1
+    #     param2: 2
 
-  # - addClassesToSVGElement
-  - cleanupAttrs
-  - cleanupEnableBackground
-  - cleanupIDs:
-       prefix: 'ttam-'
-  - cleanupListOfValues
-  - cleanupNumericValues
-  - collapseGroups
-  - convertColors
-  - convertPathData
-  - convertShapeToPath
-  - convertStyleToAttrs
-  - convertTransform
-  - mergePaths
-  - moveElemsAttrsToGroup
-  # - moveGroupAttrsToElems
-  # - removeAttrs
-  - removeComments
-  - removeDesc
-  - removeDimensions
-  - removeDoctype
-  - removeEditorsNSData
-  - removeEmptyAttrs
-  - removeEmptyContainers
-  - removeEmptyText
-  - removeHiddenElems
-  - removeMetadata
-  - removeNonInheritableGroupAttrs
-  - removeRasterImages
-  # - removeStyleElement
-  - removeTitle
-  - removeUnknownsAndDefaults
-  - removeUnusedNS
-  - removeUselessDefs
-  - removeUselessStrokeAndFill
-  # - removeViewBox
-  - removeXMLProcInst
-  - sortAttrs
-  - transformsWithOnePath
+    # These are ordered
+    - removeDoctype
+    - removeXMLProcInst
+    - removeComments
+    - removeMetadata
+    - removeEditorsNSData
+    - cleanupAttrs
+    - convertStyleToAttrs
+    - cleanupIDs:
+        prefix: 'ttam-'
+    - removeRasterImages
+    - removeUselessDefs
+    - cleanupNumericValues
+    - cleanupListOfValues
+    - convertColors
+    - removeUnknownsAndDefaults
+    - removeNonInheritableGroupAttrs
+    - removeUselessStrokeAndFill
+    # - removeViewBox
+    - cleanupEnableBackground
+    - removeHiddenElems
+    - removeEmptyText
+    - convertShapeToPath
+    - moveElemsAttrsToGroup
+    # - moveGroupAttrsToElems
+    - collapseGroups
+    - convertPathData
+    - convertTransform
+    - removeEmptyAttrs
+    - removeEmptyContainers
+    - mergePaths
+    - removeUnusedNS
+    - transformsWithOnePath
+    - sortAttrs
+    - removeTitle
+    - removeDesc
+    - removeDimensions
+    # - removeAttrs
+    # - addClassesToSVGElement
+    - removeStyleElement

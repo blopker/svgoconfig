@@ -1,7 +1,7 @@
 # replace default config
 
 multipass: true
-full: true # Disregard all defaults
+# full: true # Disregard all defaults
 
 plugins:
 
@@ -25,7 +25,7 @@ plugins:
     - cleanupAttrs
     - convertStyleToAttrs
     - cleanupIDs:
-        prefix: 'ttam-'
+        prefix: 'id-'
     - removeRasterImages
     - removeUselessDefs
     - cleanupNumericValues
@@ -55,4 +55,4 @@ plugins:
     - removeDimensions
     # - removeAttrs
     # - addClassesToSVGElement
-    - removeStyleElement
+    # - removeStyleElement
